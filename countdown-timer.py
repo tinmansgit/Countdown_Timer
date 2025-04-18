@@ -14,7 +14,12 @@ class CountdownTimer:
     def __init__(self, master):
         self.master = master
         log_debug("Initializing Countdown Timer")
-        master.title("Countdown Timer v2.0")
+        master.title("Countdown Timer")
+        try:
+            icon = tk.PhotoImage(file="countdown_timer_icon.png")
+            master.iconphoto(False, icon)
+        except Exception as e:
+            log_error(f"Failed to load icon: {e}")
         master.configure(bg="black")
         self.container = tk.Frame(master, bg="black", padx=10, pady=10)
         self.container.pack(fill=tk.BOTH, expand=True)
