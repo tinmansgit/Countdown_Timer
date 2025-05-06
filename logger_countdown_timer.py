@@ -1,7 +1,9 @@
 import logging
+from datetime import datetime
 
-error_log_file = 'log_timer_countdown_error.log'
-debug_log_file = 'log_timer_countdown_debug.log'
+current_date = datetime.now().strftime('%Y-%m-%d')
+error_log_file = f'~/bin/Python/Countdown_Timer/log_error_countdown_timer_{current_date}.log'
+debug_log_file = f'~/bin/Python/Countdown_Timer/log_debug_countdown_timer_{current_date}.log'
 
 logger = logging.getLogger('app_logger')
 logger.setLevel(logging.DEBUG)
