@@ -7,7 +7,8 @@ from logger_countdown_timer import log_error, log_debug
 import os
 import subprocess
 
-DEFAULT_SOUND_FILE = "/Music/level-up.mp3"
+DEFAULT_SOUND_FILE = "~/Music/level-up.mp3"
+
 log_debug("Sound file set to level-up.mp3")
 
 class CountdownTimer:
