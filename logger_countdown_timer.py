@@ -1,3 +1,4 @@
+# log script for countdown timer
 import logging
 from datetime import datetime
 
